@@ -1,4 +1,6 @@
-fetch(window.csv).then(data => data.text()).then(data => {
+let spreadSheetCSV = `https://docs.google.com/spreadsheets/d/${window.csvID}/export?format=csv`;
+
+fetch(spreadSheetCSV).then(data => data.text()).then(data => {
   let linkData = data.split(/\r?\n/);
 
   let linkList = linkData.map(str => {
