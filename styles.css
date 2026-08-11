@@ -10,6 +10,11 @@ body {
   box-sizing: border-box;
 }
 
+.loading {
+	color: #fff;
+	text-transform: uppercase;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -45,10 +50,4 @@ a {
 a:active {
   background-color: #1558b3;
   transform: scale(0.98);
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: #1669d6;
-  }
 }
